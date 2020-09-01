@@ -1,0 +1,220 @@
+/* CSS RESET */
+*{
+    margin : 0 ;
+    padding : 0 ; 
+}
+
+/* CSS variables */
+:root{
+    --navbar-height : 59 px ; 
+}
+
+/* navigation bar */
+#navbar{
+    display: flex;
+    align-items : center ;  
+}
+
+/* navbar = list styling */
+#navbar{
+    position: relative;
+}
+#navbar ul{
+    display : flex ; 
+}
+#navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+ #navbar ul li{
+     list-style: none ;
+     font-size : 1.3rem ; 
+ }
+ #navbar ul li a{
+     color: white;
+    display: block;
+    padding : 3px 34px ; 
+    text-decoration: none;
+    border-radius: 20px;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-clip: white;
+    display : block;
+    padding: 3px 22px ;
+    border-radius: 20px;
+    text-decoration: underline; 
+} 
+#logo{
+    margin: 3px 4px ;
+}
+#logo img{
+   margin: 3px 5px;
+   height: 56px ;
+}
+/* home */
+#home{
+    display:flex;
+    /* border: 3px solid rgb(230, 163, 230); */
+    /* background-color: rgb(245, 209, 245); */
+    flex-direction: column;
+    padding : 3px 200px;
+    height: 400px;
+    justify-content: center;
+    align-content: center;
+}
+home::before{
+    content:"";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+/* utility classes */
+#home h1{
+    color: purple;
+    text-align: center;
+}
+#home p{
+    color:purple;
+    text-align: center;
+    font-size: 1.5rem ;
+   
+}
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.btn{
+    width: 30%;
+    padding: 8px 20px;
+    border: 2px solid black;
+    color: rebeccapurple;
+    display: block;
+    margin: auto;
+    border-radius: 5px ;
+    font-size:2rem;
+    cursor: pointer;
+    background-color: rgb(243, 240, 240) ;
+}
+.btn:hover{
+    color: rosybrown;
+    background-color: white;
+} 
+
+/* services */
+
+#services{
+margin:34px;
+display:flex;
+
+}
+ .box{
+      border: 2px solid plum;
+      height: 200px;
+      width: 20%;
+      display: inline-block;
+      margin: 8px 50px;
+      padding: 34px;
+      border-radius: 8px;
+      background-color: rgb(243, 240, 240);     
+}
+.box p{
+    display: flex;
+    text-align: center;
+}
+.box h2{
+    display: flex;
+    text-align: center;
+}
+.first{
+    font-size : 3.8rem;
+    padding: 12px;
+    color:black;
+}
+.second{
+    font-size : 2rem;
+    padding: 12px;
+}
+
+.box img{
+display: block;
+ margin: auto ;
+ height: 70px; 
+ width: 25%;
+ padding : 2px ;
+}
+
+/* cilents section */
+#client-section{ 
+    margin: 20px 20px ;
+   
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(../images/salad.jpg) no-repeat center center/cover;
+    width: 95%;
+    height: 70%;
+    z-index: -1;
+    opacity: 0.4;
+}
+.client-item{
+   
+    display: inline-block;
+    margin: 8px 30px;
+    padding: 20px;
+ 
+}
+
+/* contact-section */
+#cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 39px;
+    margin: 8px;
+}
+#contact{
+margin: 50px 50px ; 
+padding : 2px;
+position: relative;
+}
+#cont::before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 90%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(../images/hello.jpg) no-repeat center center/cover;
+}
+#cont form{
+width : 40%;
+font-size: 1.3rem;
+}
+#cont label{
+
+}
+#cont textarea , #contact input{
+ width: 100%;
+ padding : 0.5rem ; 
+ font-size: 1.1rem ;
+}
+
+
+/* copyright */
+
+footer{
+background: black;
+color:white ;
+padding:9px 20px;
+
+}
